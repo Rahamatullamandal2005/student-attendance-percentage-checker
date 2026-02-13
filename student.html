@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Pro Planner</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+
+<div class="theme-toggle">
+    <button onclick="toggleTheme()">🌙 Toggle Mode</button>
+</div>
+
+<div class="container">
+    <h1>📊 Attendance Pro Planner</h1>
+
+    <div class="input-group">
+        <input type="number" id="totalClasses" placeholder="Total Classes Conducted">
+        <input type="number" id="attendedClasses" placeholder="Classes Attended">
+        <input type="number" id="requiredPercentage" placeholder="Required % (eg: 75)">
+        <button onclick="calculateAttendance()">Calculate</button>
+    </div>
+
+    <div class="result" id="resultBox">
+        <div class="circle">
+            <span id="circleText">0%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <p id="bunkResult"></p>
+        <p id="statusResult"></p>
+    </div>
+
+    <h3>📜 History</h3>
+    <table id="historyTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>%</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="student.js"></script>
+</body>
+</html>
