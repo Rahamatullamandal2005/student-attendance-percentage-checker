@@ -1,53 +1,125 @@
-# student-attendance-planner
-A practical web application built using HTML, CSS, and JavaScript to help college students calculate attendance percentage and plan safe bunking. The app shows safe, warning, and danger zones, calculates bunk limits, and stores data using localStorage for a smooth user experience.
-📊 Attendance & Bunk Planner
+# 📊 Student Attendance Planner
 
-A simple and practical web application built using HTML, CSS, and JavaScript to help college students calculate their attendance percentage and plan safe bunking without falling below the required attendance criteria.
+A practical and responsive web application built using **HTML, CSS, and JavaScript** that helps college students calculate their attendance percentage and plan safe bunking without falling below the required attendance criteria.
 
-🚀 About the Project
+---
 
-Maintaining minimum attendance is a common challenge for college students. Many students often find themselves calculating attendance manually and wondering, “Aaj bunk kar sakte hai kya?” 
+## 🚀 About the Project
 
-The Attendance & Bunk Planner solves this problem by providing a clean and easy-to-use interface where students can input their attendance details and instantly get accurate results. The application calculates the current attendance percentage, determines the attendance status, and shows how many classes can be safely skipped.
+Maintaining minimum attendance is a common challenge for college students. Many students often find themselves manually calculating attendance and wondering:
 
-This project focuses on clarity, usability, and logical correctness, rather than unnecessary complexity.
+> "Can I bunk today without dropping below the required percentage?"
 
-✨ Features
+The **Student Attendance Planner** solves this problem by providing a clean, intuitive, and easy-to-use interface where students can enter their attendance details and instantly receive accurate results.
 
-Calculate current attendance percentage
+The application:
 
-Displays attendance status:
+- Calculates the current attendance percentage  
+- Determines attendance status (Safe, Warning, Danger)  
+- Calculates how many additional classes can be safely bunked  
+- Validates incorrect or unrealistic inputs  
+- Stores user data using `localStorage` for a smoother experience  
 
-✅ Safe Zone
+This project emphasizes **logical correctness, simplicity, and real-world usability**.
 
-⚠️ Warning Zone
+---
 
-🚨 Danger Zone
+## ✨ Features
 
-Calculates how many classes can be safely bunked
+- 📈 Calculate current attendance percentage  
+- 🟢 Safe Zone indicator  
+- 🟡 Warning Zone indicator  
+- 🔴 Danger Zone indicator  
+- 🎯 Smart bunk planner (safe bunk limit calculation)  
+- ⚠️ Input validation for incorrect entries  
+- 💾 LocalStorage integration (data persistence)  
+- 🎨 Clean and student-friendly UI  
+- 📱 Responsive layout (works on desktop and mobile)
 
-Validates incorrect inputs
+---
 
-Saves user data using localStorage
+## 🛠️ Tech Stack
 
-Clean and student-friendly UI
+- **HTML5** – Structure  
+- **CSS3** – Styling and layout  
+- **JavaScript (ES6)** – Logic, calculations, and DOM manipulation  
+- **LocalStorage API** – Client-side data persistence  
 
-🛠️ Tech Stack
+---
 
-HTML – Structure
+## 🧠 How It Works
 
-CSS – Styling and layout
+### 📌 Attendance Formula
 
-JavaScript – Logic, calculations, and data handling
+Attendance % = (Attended Classes / Total Classes) × 100
 
-🎯 Learning Outcomes
+### 📌 Bunk Calculation Logic
 
-Through this project, I strengthened my understanding of core frontend development concepts, especially using JavaScript for real-world problem solving. I gained hands-on experience in writing logical conditions, performing percentage-based calculations, and handling user input validation to prevent incorrect or unrealistic data entries.
+The system calculates how many additional classes can be skipped while still maintaining the required attendance percentage.
 
-This project also helped me understand how client-side data persistence works using localStorage, allowing the application to retain user input even after a page refresh. Additionally, focusing on a clean and minimal UI improved my ability to design user-friendly interfaces while maintaining readable and structured code. Overall, the project reinforced the importance of building practical applications that combine logic, usability, and simplicity.
+It repeatedly checks the percentage condition and determines the maximum number of safe bunk classes without dropping below the required threshold.
 
-🔮 Future Improvements
+---
 
-While the current version of the Attendance & Bunk Planner effectively solves a basic student problem, there is significant scope for enhancement. In future iterations, the application can be extended to support multiple subjects, allowing students to track attendance individually for each course. Adding a visual progress bar or chart would further improve user experience by representing attendance data more intuitively.
+## 📂 Project Structure
 
-Other possible improvements include making the application fully responsive for mobile devices, adding a reset or edit history feature, and providing reminders or alerts when attendance approaches the danger zone. These enhancements would not only increase functionality but also help in scaling the project into a more comprehensive student management tool.
+student-attendance-planner/
+│
+├── index.html
+├── student.css
+├── student.js
+└── README.md
+
+---
+
+## ▶️ How to Run Locally
+
+1. Clone the repository:
+
+git clone https://github.com/Rahamatullamandal2005/student-attendance-percentage-checker.git
+
+2. Open the project folder  
+3. Double-click `index.html`  
+
+No server setup required.
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I strengthened my understanding of:
+
+- Writing efficient JavaScript logic  
+- Performing percentage-based mathematical calculations  
+- Handling user input validation  
+- DOM manipulation  
+- Client-side storage using LocalStorage  
+- Designing clean and readable UI  
+
+This project demonstrates practical frontend development skills focused on solving real-world student problems.
+
+---
+
+## 🔮 Future Improvements
+
+- Subject-wise attendance tracking  
+- Visual charts or progress bars  
+- Full mobile optimization improvements  
+- Edit/reset history feature  
+- Attendance alerts when reaching danger zone  
+- Export attendance report as PDF  
+- Authentication system for multiple users  
+
+---
+
+## 👨‍💻 Author
+
+**Rahamatulla Mandal**  
+Frontend Developer  
+Kolkata, India  
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
